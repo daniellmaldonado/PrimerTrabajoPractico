@@ -15,7 +15,8 @@ body{
     font-family: simpsonfont;
 }
 
-.header{
+/*-------------Estilo header pagina personajes------------------*/
+.headerpersonajes{
     background-image:url(Imágenes/Simpsons\ personajes\ II.jpg);
     opacity: 50%;
     background-position: center center;
@@ -45,6 +46,7 @@ body{
     margin-bottom: 25px;
 }
    
+/*---------------Estilo para body de pagina personajes--------*/
 .tab-personajes{
     margin: auto;
     max-width: 90%;
