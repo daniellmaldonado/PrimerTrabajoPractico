@@ -47,6 +47,7 @@
             <ul>
                 <li> <a href="#principales">Principales</a></li>
                 <li> <a href="#secundarios">Secundarios</a></li>
+                <li> <a href="#otros"> Otros</a></li>
             </ul>
         </div>
 
@@ -131,7 +132,7 @@
                     </div>
                 </a>
             </div>
-            <div class="personaje">
+            <div id="marge" class="personaje">
                 <a href="enconstruccion.html">
                     <figure>
                         <img src="imagenes/Marge Simpson.png" alt="Marge Simpson">
@@ -496,6 +497,22 @@
             </div>
 
         </div>
+        <div id="app" class="contenedor-personajes">
+            <div v-for="elemento in datos" class="personaje">
+                <a name="otros"><a href="enconstruccion.html">
+                    <figure>
+                        <img :src="elemento.Imagen" alt="datos.Nombre">
+                    </figure>
+                    <div>
+                        <h3>{{elemento.Nombre}}</h3>
+                    </div>
+                </a></a>
+
+            </div>
+        </div>
+
+
+        </div>
     </main>
 
     <footer class="footer container">
@@ -536,6 +553,9 @@
         </div>
 
     </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
