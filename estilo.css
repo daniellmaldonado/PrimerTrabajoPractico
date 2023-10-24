@@ -476,3 +476,44 @@ article {
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
+
+/*-------------Estilo página de Contacto------------------*/
+
+.headercontacto{
+    background-image: url(imagenes/Simpsons\ personajes\ lll.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    padding: 80px 0;
+
+}
+
+.headercontacto a{
+    text-decoration: none;
+}
+
+.container-sm{
+    margin-top: 2rem;
+}
+
+.container-sm p{
+    font-size: 1.5rem;
+    color: #ffffff;
+    
+}
+
+#nombre{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#email{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.link ul li>a{
+    text-decoration: none;
+}
+
