@@ -1,0 +1,235 @@
+@font-face {
+    font-family: simpsonfont;
+    src: url(./fuentes/Simpsonfont\ DEMO.otf);
+}
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    transition: all .2s linear;
+}
+body{
+    font-family: simpsonfont;
+    background: rgb(109, 84, 125);
+}
+.header{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 80px 0;
+    
+    
+}
+.episodios{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    font-weight: 600;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color: #ff5a2c;
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    
+    width: 100%;
+    min-height: 100vh;
+}
+.conten{
+    padding: 3rem 9%;
+    background: linear-gradient(90deg,rgb(34, 36, 41) rgba(34, 36, 41, 0.5)), url(./imagen/1418786070_064451_1418786171_noticia_normal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    color: yellow;
+}
+.conten h1 h2 {
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: #d8d8d8;
+}
+.conten p {
+    max-width: 45rem;
+    color: #d8d8d8;
+    font-size: 1rem;
+    margin: .5rem 0;
+    letter-spacing: .02rem;
+    font-weight: 300;
+}
+.btn{
+    display: inline-block;
+    background: #8a269e;
+    border-radius: .2rem;
+    padding: .4rem 3rem;
+    color: #d8d8d8;
+    margin-top: .5rem;
+    font-size: 1rem;
+    box-shadow: 0.15rem 0.15rem 0.5rem rgba(235, 236, 14);
+}
+.btn:hover{
+    background: #6a187a;
+}
+.title1{
+    padding: 1rem 9%;
+    color: #d8d8d8;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.video{
+    border: 0.12rem solid #d8d8d8;
+}
+.contvideos{
+    padding: 0 9%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+.footer {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 50px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 20vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.link ul li > a {
+    font-size: 17px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+.link ul li > a:hover {
+    color: #ff5a2c;
+}
+.socials{
+    display: flex;
+    margin-bottom: 30px;
+}
+.socials a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #00c3ff;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+}
+.socials a:hover {
+    background-color: #ffffff;
+}
+hr{
+    border: 1px solid #e0e0e0;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text p{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: yellow;
+        display: none;
+    }
+    .menu .navbar ul li a:hover{
+        color: red;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt{
+        text-align: center;
+        flex-basis: 100%;
+    }    
+    .footer{
+        padding: 30px ;
+    }
+    .footer-link{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .socials{
+        justify-content: center;
+    }
+    .footer-text{
+        text-align: center;
+    }
+}    
